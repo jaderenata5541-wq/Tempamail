@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Correo Temporal – Generador de Email Desechable</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; background:#f6f6f6; color:#333; }
+    header { background:#4e6ef2; color:#fff; padding:20px; text-align:center; }
+    .container { max-width:900px; margin:40px auto; background:#fff; padding:30px; border-radius:10px; box-shadow:0 0 10px rgba(0,0,0,0.1); }
+    h2 { color:#4e6ef2; }
+    .btn { background:#4e6ef2; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; }
+    footer { text-align:center; margin:40px 0; color:#777; }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Correo Temporal – Genera Emails Desechables Gratis</h1>
+</header>
+
+<div class="container">
+    <p>
+        Este es un proyecto estático creado únicamente para fines educativos y demostrativos,
+        mostrando cómo funciona un generador de correos temporales. Si deseas utilizar un
+        servicio real y completamente funcional, visita nuestro sitio oficial:
+    </p>
+
+    <p>
+        🔗 <a href="https://correotemporal.com.mx/" target="_blank">https://correotemporal.com.mx</a>
+    </p>
+
+    <h2>¿Qué es un correo temporal?</h2>
+    <p>
+        Un correo temporal o desechable es una dirección de email que puedes usar para registrarte
+        en páginas web, recibir códigos, verificar cuentas o evitar el spam. Después de usarlo,
+        puedes eliminarlo y tu privacidad permanece protegida.
+    </p>
+
+    <h2>Ejemplo de Generador (Versión Demo)</h2>
+
+    <input type="text" id="correo" style="width:100%; padding:15px; font-size:18px; margin:10px 0;" readonly>
+    <button class="btn" onclick="generarCorreo()">Generar Email Temporal</button>
+
+    <script>
+        function generarCorreo() {
+            const random = Math.random().toString(36).substring(2, 10);
+            document.getElementById('correo').value = random + '@tempmail.demo';
+        }
+    </script>
+
+    <h2>Sobre este Proyecto</h2>
+    <p>
+        Este repositorio es parte del ecosistema del proyecto oficial
+        <a href="https://correotemporal.com.mx" target="_blank">CorreoTemporal.com.mx</a>,
+        un generador de correos temporales gratuito, rápido y seguro para usuarios de México.
+    </p>
+
+</div>
+
+<footer>
+    © 2025 – Proyecto demostrativo para CorreoTemporal.com.mx
+</footer>
+
+</body>
+</html>
